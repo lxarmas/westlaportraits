@@ -11,21 +11,21 @@
   text-align: center; /* Centers the image horizontally within each div */
   margin-bottom: 25px;
 }
-.carousel{
-  background-color: rgb(203, 203, 203);
-}
 
-.carousel-item {
-   margin-left:80vh ;
-    }
 
 .carousel-inner img {
     max-width: 25%; /* Adjust this value as needed */
     height: auto; /* Maintain the aspect ratio */
+    margin-left: 70vh;
   }
 
 
 
+/* Add this CSS code to your stylesheet or in a <style> tag in your HTML file */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
 
 
 
