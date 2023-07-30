@@ -1,12 +1,40 @@
+.header{
+    color:#adabab;
+      margin-left: 640px;
+      font-size: 45px;
 
 
+    
+}
+
+/* NAVBAR */
+div.scrollmenu {
+  background-color: #ececec;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+      margin-left: 300px;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 25px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #f40000;
+  border-radius: 20px;
+}
+/* SLIDESHOW */
 /* Slideshow container */
 .slideshow-container {
+  margin-top: 60px;  
   max-width: 1000px;
   position: relative;
   margin-left: 700px;
-
-
 }
 
 /* Hide the images by default */
@@ -30,15 +58,6 @@
   user-select: none;
 }
 
-
-.text {
-  color: #ff0000;
-  font-size: 25px;
-  width: 100%;
-  right: 45px;
-  text-align: center;
-}
-
 .fade {
   animation-name: fade;
   animation-duration: 2s;
@@ -48,3 +67,4 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
