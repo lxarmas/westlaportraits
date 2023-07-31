@@ -1,0 +1,26 @@
+
+
+
+/* Styling for hero section */
+.hero {
+  background-image: url('public/images/editing_editing_0009.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  font-size: 35px;
+  color: #ff0000;
+}
+
+/* Styling for newsletter section */
+.newsletter {
+  text-align: center;
+}
+
+/* Additional styling for other sections (gallery, story, testimonials) goes here */

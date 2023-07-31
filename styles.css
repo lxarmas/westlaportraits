@@ -1,25 +1,18 @@
-/* Assuming you have already defined the styles for .MainDiv and other elements */
+
 
 .Header {
-    display: flex;
-    align-items: center; /* Align items vertically in the center */
+  display: flex;
+  align-items: center; /* Centers items vertically within the container */
+  justify-content: space-between; /* Distributes items evenly along the container */
 }
 
-.HeaderLogo{
-  flex-grow: 1;
-  margin: 40px;
-  margin-left: 30px;
-}
+.HeaderLogoOne,
+.HeaderLogoTwo,
 .TextLogo {
-  margin-top: 45px;
-  margin-right: 450px;
-  margin-bottom: 45px;
- 
-   
-
- }
-
-
+  flex: 1; /* Each item will take an equal share of available space */
+  text-align: center; /* Centers the image horizontally within each div */
+  margin-bottom: 25px;
+}
 
 
 /* NAVBAR */
@@ -40,7 +33,7 @@ div.scrollmenu a {
 }
 
 div.scrollmenu a:hover {
-  background-color: #ffe0f9;
+  background-color:  #4CAF50;
   border-radius: 20px;
 }
 /* SLIDESHOW */
@@ -84,6 +77,32 @@ div.scrollmenu a:hover {
 }
 
 /*  GRID PICTURE */
+.buttonContainer{
+   display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 20px; /* Adjust the margin as needed */
+
+}
+/* Button animation */
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 5px; /* Add space between the buttons horizontally */
+  font-size: 18px;
+  background-color: #ececec;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* Hover animation */
+.button:hover {
+  background-color: #45a049; /* Slightly darker shade when hovered */
+  transform: scale(1.1); /* Enlarge the button on hover */
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -91,13 +110,18 @@ div.scrollmenu a:hover {
 }
 
 /* Create two equal columns that sits next to each other */
+/* Create two equal columns that sits next to each other */
 .column {
   flex: 1;
   padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
 }
 
 .column img {
   width: 50%;
+  max-width: 100%; /* Ensure the image does not exceed the column's width */
   margin-top: 8px;
-  vertical-align: middle;
+  align-self: center; /* Center the image within the column vertically */
 }
