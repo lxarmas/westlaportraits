@@ -20,8 +20,8 @@
             height: 150px;
         }
         input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
+            background-color:  #ff0000;
+            color: rgb(255, 255, 255);
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -29,5 +29,5 @@
             width: 100%;
         }
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #870000;
         }
