@@ -1,26 +1,96 @@
+/* Styling for header and navigation */
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
 
 /* Styling for hero section */
 .hero {
-  background-image: url('public/images/editing_editing_0009.jpg');
+  /* background-image: url('public/images/editing_editing_0009.jpg'); */
   background-size: cover;
   background-position: center;
   min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #000000;
+  text-align: center;
 }
 
 .hero-text {
-  text-align: center;
   font-size: 35px;
-  color: #ff0000;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* Styling for newsletter section */
 .newsletter {
+  background-color: #f2f2f2;
+  padding: 40px 0;
   text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+}
+
+#newsletter-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /* Additional styling for other sections (gallery, story, testimonials) goes here */

@@ -22,12 +22,37 @@
       </div>
     </div>
 
+     <!-- NAVBAR -->
+   <!-- NAVBAR -->
     <div class="scrollmenu">
-            <a href="index.html">Home</a>
-            <a href="#news">Services</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-        </div>
+  <a href="index.html" class="navbar-link">Home</a>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="navbar-link">Services</button>
+    <div id="myDropdown" class="dropdown-content">
+      <div class="hamburger-item">
+        <a href="portraits.html">Portraits</a>
+      </div>
+      <div class="hamburger-item">
+        <a href="products.html">Products</a>
+      </div>
+      <div class="hamburger-item">
+        <a href="weddings.html">Weddings</a>
+      </div>
+      <div class="hamburger-item">
+        <a href="realestate.html">Real Estate</a>
+      </div>
+      <div class="hamburger-item">
+        <a href="events.html">Events</a>
+      </div>
+      <!-- Add additional pages here if needed -->
+    </div>
+  </div>
+  <a href="contact.html" class="navbar-link">Contact</a>
+  <a href="about.html" class="navbar-link">About</a>
+</div>
+
+
+
     <h1>Contact Us</h1>
     <form action="#" method="post">
         <label for="name">Name:</label>
@@ -44,5 +69,6 @@
 
         <input type="submit" value="Submit">
     </form>
+     <script src="index.js"></script>
 </body>
 </html>
