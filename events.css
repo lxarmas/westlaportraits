@@ -1,0 +1,119 @@
+
+
+.Header {
+  display: flex;
+  align-items: center; /* Centers items vertically within the container */
+  justify-content: space-between; /* Distributes items evenly along the container */
+}
+
+.HeaderLogoOne,
+.HeaderLogoTwo,
+.TextLogo {
+  flex: 1; /* Each item will take an equal share of available space */
+  text-align: center; /* Centers the image horizontally within each div */
+  margin-bottom: 25px;
+}
+
+
+/* NAVBAR */
+div.scrollmenu {
+  margin-top: 20px;
+  overflow: auto;
+  white-space: nowrap;
+  }
+.navbar-link {
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+  border:none;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 25px;
+  margin-left: 400px;
+}
+
+.navbar-link:hover {
+  background-color: #af0000;;
+}
+
+div.scrollmenu a {
+  margin-left: 200px;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 25px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color:  #e4e4e4;
+
+  border-radius: 20px;
+}
+
+
+/* SERVICES */
+#Services{
+  background-color:  #ff0000;
+  color:white;
+ 
+}
+
+div.hamburger-item a{
+  color: #af0000;;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #000000;
+  padding:10px
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+ 
+display: none;
+top: 0; 
+
+ 
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.show {display:flex}
+
+
+
+
+
+
+.row {
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+/* Create two equal columns that sits next to each other */
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 1;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.column img {
+  width: 100%;
+  max-width: 100%; /* Ensure the image does not exceed the column's width */
+  margin-top: 45px;
+  align-self: center; /* Center the image within the column vertically */
+}
+
