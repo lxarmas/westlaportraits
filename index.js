@@ -14,60 +14,6 @@ function showSlides() {
   setTimeout(showSlides, 3000);
 }
 
-// Add Three.js code for 3D carousel here
-const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xffffff);
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-
-const images = [
-  "public/images/portraits/editing_editing_0015.jpg",
-  "public/images/portraits/editing_editing_0026.jpg",
-  "public/images/portraits/portraits_0002.jpg",
-  "public/images/portraits/editing_editing_0027.jpg",
-  "public/images/portraits/IMG_0916.JPG",
-  "public/images/portraits/editing_70's _0028.jpg",
-  "public/images/portraits/editing_Maine_135mm_c41_0049.jpg",
-  "public/images/portraits/editing_editing_0016.jpg",
-  "public/images/portraits/IMG_0736.JPG",
-  "public/images/weddings/weddings_0003.jpg",
-  "public/images/lifestyle/editing_lebanon_135mm_c41_lores_0046.jpg",
-  "public/images/weddings/weddings_0005.jpg",
-  "public/images/weddings/weddings_0004.jpg",
-  // Add more image URLs here
-];
-
-const imageTextures = images.map(imageUrl => new THREE.TextureLoader().load(imageUrl));
-
-const carouselRadius = 12;
-const carouselRotationSpeed = 0.003;
-
-const slideGeometry = new THREE.PlaneGeometry(7, 7); // Adjust the size of the slides
-const slideMaterials = imageTextures.map(texture => new THREE.MeshBasicMaterial({ map: texture }));
-const slides = slideMaterials.map(material => new THREE.Mesh(slideGeometry, material));
-
-slides.forEach((slide, index) => {
-  const angle = (Math.PI * 2) * index / images.length;
-  slide.position.x = carouselRadius * Math.cos(angle);
-  slide.position.z = carouselRadius * Math.sin(angle);
-  scene.add(slide);
-});
-
-camera.position.set(0, 5, 20);
-
-function animate() {
-  requestAnimationFrame(animate);
-
-  slides.forEach(slide => {
-    slide.rotateY(carouselRotationSpeed);
-  });
-
-  renderer.render(scene, camera);
-}
-
-animate();
 
 
 // GRID PICTURE FOR HOMEPAGE
