@@ -45,7 +45,7 @@ function one() {
   document.getElementsByClassName("container")[0].classList.add("one");
 }
 
-// Two images side by side
+// Three  images side by side
 function two() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.flex = "25%";
