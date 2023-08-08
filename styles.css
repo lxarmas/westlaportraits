@@ -96,6 +96,7 @@ top: 0;
 /* SLIDESHOW */
 /* Slideshow container */
 .slideshow-container {
+  width: 25%;
   margin-top: 60px;  
   max-width: 1000px;
   position: relative;
@@ -124,6 +125,48 @@ top: 0;
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: 50px;
+  user-select: none;
+}
+
+.prev {
+  left: 500px;
+
+}
+
+.next {
+  right: 500px;
+}
+
+/* Add styles for indicators (optional) */
+.indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #717171;
+}
+
+
+
+
 
 /*  GRID PICTURE */
 .buttonContainer{
