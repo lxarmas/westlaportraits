@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lxarmas/PhotoWebsite/issues"
   },
-  "homepage": "https://github.com/lxarmas/PhotoWebsite#readme"
+  "homepage": "https://github.com/lxarmas/PhotoWebsite#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
