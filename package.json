@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lxarmas/PhotoWebsite.git"
+    "url": "git+ssh://git@github.com:lxarmas/westlaphoto.git"
   },
   "author": "Alejandro Armas",
   "license": "ISC",
