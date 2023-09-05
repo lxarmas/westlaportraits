@@ -24,18 +24,18 @@ div.scrollmenu {
 }
 
 .navbar-link {
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
   border: none;
   border-radius: 25px;
   color: rgb(0, 0, 0);
   text-align: center;
-  font-size: 25px;
-  margin: 0 10px; /* Adjust as needed */
+
+  margin: 0 100px; /* Adjust as needed */
 }
 
 .navbar-link:hover {
-  background-color: #af0000;;
+  background-color: #848484;;
 }
 
 div.scrollmenu a {
@@ -43,8 +43,8 @@ div.scrollmenu a {
   display: inline-block;
   color: rgb(0, 0, 0);
   text-align: center;
-  padding: 25px;
-  font-size: 30px;
+
+  font-size: 25px;
   text-decoration: none;
 }
 
@@ -57,14 +57,12 @@ div.scrollmenu a:hover {
 
 /* SERVICES */
 #Services{
-  background-color:  #ff0000;
-  color:white;
+
+  color:rgb(1, 1, 1);
+   font-size: 15px;
  
 }
 
-div.hamburger-item a{
-  color: #af0000;;
-}
 
 .dropbtn:hover, .dropbtn:focus {
   background-color: #000000;
@@ -86,7 +84,9 @@ top: 0;
  
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  padding:10px;} 
 .show {display:flex}
 
 
@@ -97,7 +97,7 @@ top: 0;
 /* Slideshow container */
 .slideshow-container {
   width: 25%;
-  margin-top: 60px;  
+  margin-top: 100px;  
   max-width: 1000px;
   position: relative;
   margin: 0 auto;
