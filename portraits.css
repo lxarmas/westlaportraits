@@ -33,9 +33,6 @@ div.scrollmenu {
   margin-left: 400px;
 }
 
-.navbar-link:hover {
-  background-color: #af0000;;
-}
 
 div.scrollmenu a {
   margin-left: 200px;
@@ -56,7 +53,7 @@ div.scrollmenu a:hover {
 
 /* SERVICES */
 #Services{
-  background-color:  #ff0000;
+ 
   color:white;
  
 }
