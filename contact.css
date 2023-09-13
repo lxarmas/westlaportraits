@@ -1,10 +1,10 @@
 
 h2 {
-  background-color: rgb(200, 200, 200);
+
   font-size: 45px;
   margin: auto;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #fff; /* Set text color to white for contrast */
+  color: #000000; /* Set text color to white for contrast */
   text-align: center; /* Center-align the text */
   padding: 20px; /* Add padding for spacing around the text */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
