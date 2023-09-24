@@ -81,6 +81,11 @@ top: 0;
 
  
 }
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* Add transition for smoother appearance */
+  transition: display 0.2s ease-in-out;
+}
 
 .dropdown-content a:hover {background-color: #ddd;}
 .show {display:flex}

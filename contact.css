@@ -42,3 +42,8 @@ h2 {
         input[type="submit"]:hover {
             background-color: #870000;
         }
+        .dropdown:hover .dropdown-content {
+  display: block;
+  /* Add transition for smoother appearance */
+  transition: display 0.2s ease-in-out;
+}

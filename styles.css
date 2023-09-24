@@ -66,7 +66,11 @@ div.scrollmenu a:hover {
    font-size: 15px;
  
 }
-
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* Add transition for smoother appearance */
+  transition: display 0.2s ease-in-out;
+}
 
 .dropbtn:hover, .dropbtn:focus {
   background-color: #000000;
