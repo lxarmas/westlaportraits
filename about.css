@@ -1,11 +1,6 @@
 /* Styling for header and navigation */
 
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 nav ul {
   list-style: none;
@@ -23,11 +18,12 @@ nav ul li:first-child {
 }
 
 nav ul li a {
-  color: #000000;
+  color: #333; /* Darken the link color for better contrast */
   text-decoration: none;
   font-size: 16px;
 }
-/* Add this CSS to your about.css or create a new CSS file for the About page */
+
+/* Styling for the story/content section */
 
 .story {
   line-height: 1.6;
@@ -35,7 +31,7 @@ nav ul li a {
 }
 
 .story h2 {
-  color:#000000;
+  color: #333; /* Darken the heading color */
   font-size: 28px;
   margin-bottom: 15px;
 }
@@ -45,34 +41,32 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
-/* Adjust the font sizes and margins according to your preference */
+/* Styling for the hero section */
 
-/* Add any other styles as needed for your specific design */
-
-/* Styling for hero section */
 .hero {
-  /* background-image: url('public/images/editing_editing_0009.jpg'); */
   background-size: cover;
   background-position: center;
   min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  color: #464646; /* Set text color to white for better visibility */
   text-align: center;
+  background-image: url('your-image.jpg'); /* Add your background image here */
 }
 
 .hero-text {
-  color:#000000;
   font-size: 35px;
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
 }
 
-/* Styling for newsletter section */
+/* Styling for the newsletter section */
+
 .newsletter {
-  background-color: #c9c9c9;
+  background-color: #f9f9f9; /* Use a light background color */
   padding: 40px 0;
   text-align: center;
 }
@@ -112,6 +106,7 @@ nav ul li a {
 }
 
 /* Styling for the image gallery */
+
 .gallery {
   text-align: center;
   padding: 20px;
@@ -139,9 +134,10 @@ nav ul li a {
   transform: scale(1.05);
 }
 
-/* nfdknfkdnfkdnfd */
+/* Dropdown menu */
 .dropdown:hover .dropdown-content {
   display: block;
-  /* Add transition for smoother appearance */
   transition: display 0.2s ease-in-out;
 }
+
+/* You can further customize these styles and adjust colors to match your overall design aesthetic. */
