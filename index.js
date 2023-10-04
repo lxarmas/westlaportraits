@@ -1,8 +1,4 @@
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Your JavaScript code here
-});
-
 
 // GRID PICTURE FOR HOMEPAGE
 let elements = document.getElementsByClassName("column");
@@ -33,5 +29,8 @@ function four() {
   }
   document.getElementsByClassName("container")[0].classList.add("four");
 }
+$(document).ready(function () {
+  $('#carouselExampleAutoplaying').carousel();
+});
 
 
