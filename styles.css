@@ -80,3 +80,6 @@
   align-self: center; /* Center the image within the column vertically */
 }
 
+@media (max-width: 768px) {
+  /* Custom styles for small screens */
+}
