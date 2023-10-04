@@ -14,9 +14,9 @@
 
 
 .carousel-inner img {
-    max-width: 25%; /* Adjust this value as needed */
+    max-width: 33%; 
     height: auto; /* Maintain the aspect ratio */
-    margin-left: 70vh;
+    margin-left: 60vh;
   }
 
 

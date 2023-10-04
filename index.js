@@ -1,4 +1,7 @@
 
+document.addEventListener("DOMContentLoaded", function() {
+  // Your JavaScript code here
+});
 
 
 // GRID PICTURE FOR HOMEPAGE
@@ -18,7 +21,7 @@ function one() {
 // Three  images side by side
 function two() {
   for (let i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "50%";
+    elements[i].style.flex = "33.33%";
   }
   document.getElementsByClassName("container")[0].classList.add("two");
 }
@@ -26,7 +29,7 @@ function two() {
 // Four images side by side
 function four() {
   for (let i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "5%";
+    elements[i].style.flex = "25%";
   }
   document.getElementsByClassName("container")[0].classList.add("four");
 }
