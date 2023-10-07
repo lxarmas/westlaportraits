@@ -20,7 +20,7 @@ background-color: #828282;
 .carousel-inner img {
   max-width: 33%; 
   height: auto; /* Maintain the aspect ratio */
-  margin-left: 60vh;
+  margin-left: 70vh;
 }
 
 
