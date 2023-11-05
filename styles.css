@@ -25,12 +25,11 @@
 }
 
 
-.carousel-inner{
-background-color: #ffffff;
-}
+
 
 .carousel-inner img {
-  max-width: 33%; 
+  margin-top: 40px;
+  max-width: 28%; 
   height: auto; /* Maintain the aspect ratio */
   margin-left: 70vh;
 }
@@ -50,7 +49,7 @@ background-color: #ffffff;
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 1;
-  padding: 0 4px;
+  padding: 8px 4px;
   display: flex;
   flex-direction: column;
   align-items: center; /* Center items horizontally */
