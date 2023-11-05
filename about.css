@@ -18,7 +18,7 @@ nav ul li:first-child {
 }
 
 nav ul li a {
-  color: #333; /* Darken the link color for better contrast */
+  color: #ef0000; /* Darken the link color for better contrast */
   text-decoration: none;
   font-size: 16px;
 }
@@ -50,7 +50,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #464646; /* Set text color to white for better visibility */
+  color: #ffffff; /* Set text color to white for better visibility */
   text-align: center;
   background-color: #c0c0c0;
 
