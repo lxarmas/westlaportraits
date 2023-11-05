@@ -1,4 +1,5 @@
 .Header {
+
   display: flex;
   align-items: center; /* Centers items vertically within the container */
   justify-content: space-between; /* Distributes items evenly along the container */
@@ -7,14 +8,21 @@
 .HeaderLogoOne,
 .HeaderLogoTwo,
 .TextLogo {
+  
   flex: 1; /* Each item will take an equal share of available space */
   text-align: center; /* Centers the image horizontally within each div */
-  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+#carouselExampleAutoplaying .carousel-control-prev-icon,
+#carouselExampleAutoplaying .carousel-control-next-icon {
+    color: black !important;
 }
 
 
 .carousel-inner{
-background-color: #828282;
+background-color: #dedbdb;
 }
 
 .carousel-inner img {
@@ -22,7 +30,6 @@ background-color: #828282;
   height: auto; /* Maintain the aspect ratio */
   margin-left: 70vh;
 }
-
 
 
 /*  GRID PICTURE */
