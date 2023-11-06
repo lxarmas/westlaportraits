@@ -56,9 +56,11 @@
 }
 
 .column img {
-  width: 50%;
+  width: 100%;
   max-width: 100%; /* Ensure the image does not exceed the column's width */
-  margin-top: 8px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
   align-self: center; /* Center the image within the column vertically */
 }
 
