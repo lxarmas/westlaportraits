@@ -25,32 +25,7 @@ height:100.1%;
   margin-bottom: 10px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  transform: scale(1); /* Reset the scale */
-  border-radius: 50%; /* Adjust the border-radius */
-  background-size: 50%; /* Adjust the background size */
-  background-color: #ff0000; /* Keep the background color */
-}
 
-/* Add a media query to apply the styles only on small screens */
-@media (max-width: 768px) {
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    transform: scale(1.8);
-    border-radius: 100px;
-    background-size: 20px;
-  }
-}
-
-
-
-.carousel-inner img {
-  margin-top: 40px;
-  max-width: 28%; 
-  height: auto; /* Maintain the aspect ratio */
-;
-}
 
 
 /*  GRID PICTURE */

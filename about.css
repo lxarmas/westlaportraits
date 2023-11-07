@@ -1,5 +1,8 @@
 /* Styling for header and navigation */
 
+body {
+  overflow-x: hidden;
+}
 
 
 nav ul {
