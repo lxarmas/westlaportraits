@@ -11,28 +11,34 @@ height:100.1%;
     text-align: center;
 }
 
-/* .image-slider {
-    position: relative;
-    overflow: hidden;
-} */
 
 .image-slider {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    height: 800px;
 }
+
 .image-slider img {
-    max-width: 100%; /* Set the maximum width to the desired value */
-    max-height: 800px; /* Set the maximum height to the desired value */
-    display: block;
-    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    left: 50%; /* Center the image horizontally */
+    top: 50%; /* Center the image vertically */
+    transform: translate(-50%, -50%); /* Center the image both horizontally and vertically */
 }
 
+.image-slider img.active {
+    opacity: 1;
+}
 
-/* Style for the image container */
+/* The rest of your CSS remains unchanged. */
 
-/* Style for the buttons */
+
+
 .button {
     background-color: transparent;
     color: #000000;
