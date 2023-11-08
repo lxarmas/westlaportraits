@@ -44,8 +44,10 @@ nav ul li:first-child {
 }
 
 /* Styling for the hero section */
+
 .hero {
   font-family: 'Courier New', Courier, monospace;
+ 
   background-size: cover;
   background-position: center;
   min-height: 400px;
@@ -54,21 +56,16 @@ nav ul li:first-child {
   align-items: center;
   color: #000000; /* Set text color to white for better visibility */
   text-align: center;
-}
 
+
+}
 .hero-text p {
-  font-size: 100px;
+  font-size: 4rem; /* Adjust the value as needed */
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 7s ease-in-out forwards;
 }
 
-/* Media query for screens with a max-width of 768px (typical for mobile devices) */
-@media (max-width: 768px) {
-  .hero-text p {
-    font-size: 40px; /* Adjust the value as needed for mobile devices */
-  }
-}
 
 @keyframes fadeIn {
   from {
@@ -85,7 +82,7 @@ nav ul li:first-child {
   animation-delay: 3s; /* Delay the animation of the second paragraph */
 }
 
-
+/* Styling for the newsletter section */
 
 .newsletter {
   background-color: #f9f9f9; /* Use a light background color */
