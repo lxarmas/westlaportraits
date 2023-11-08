@@ -2,12 +2,75 @@ body {
   overflow-x: hidden;
 }
 
-
-
-
 html {
 height:100.1%;
 }
+
+
+.container {
+    text-align: center;
+}
+
+/* .image-slider {
+    position: relative;
+    overflow: hidden;
+} */
+
+.image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.image-slider img {
+    max-width: 100%; /* Set the maximum width to the desired value */
+    max-height: 800px; /* Set the maximum height to the desired value */
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Style for the image container */
+
+/* Style for the buttons */
+.button {
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #959595;
+    color: #fff;
+}
+
+/* Style for the icons */
+.button i {
+    font-size: inherit;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Position the buttons */
+#prev-btn {
+    position: absolute;
+    left: 50px; /* Adjust the left position as needed */
+    bottom: 500px;
+}
+
+#next-btn {
+    position: absolute;
+    right: 50px; /* Adjust the right position as needed */
+     bottom: 500px;
+}
+
+
+
 .Header {
 
   display: flex;
@@ -23,39 +86,6 @@ height:100.1%;
   text-align: center; /* Centers the image horizontally within each div */
   margin-top: 25px;
   margin-bottom: 10px;
-}
-
-
-
-
-/*  GRID PICTURE */
-
-
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
- justify-content: center; /* Center the columns horizontally */
-}
-
-
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  padding: 0 20px;
-}
-
-.column img {
-  width: 100%;
-  max-width: 100%; /* Ensure the image does not exceed the column's width */
-  margin-top: 20px;
-
-
-  align-self: center; /* Center the image within the column vertically */
 }
 
 @media (max-width: 768px) {

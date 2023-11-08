@@ -2,6 +2,7 @@
 
 body {
   overflow-x: hidden;
+ 
 }
 
 
@@ -20,11 +21,6 @@ nav ul li:first-child {
   margin-left: 0;
 }
 
-nav ul li a {
-  color: #ef0000; /* Darken the link color for better contrast */
-  text-decoration: none;
-  font-size: 16px;
-}
 
 /* Styling for the story/content section */
 
@@ -34,33 +30,39 @@ nav ul li a {
 }
 
 .story h2 {
-  color: #333; /* Darken the heading color */
+  margin: 40px;
+  color: #cd0000; /* Darken the heading color */
   font-size: 28px;
   margin-bottom: 15px;
 }
 
 .story p {
-  font-size: 16px;
+  font-weight: bold;
+  margin: 40px;
+  font-size: 42px;
   margin-bottom: 20px;
 }
 
 /* Styling for the hero section */
 
 .hero {
+  font-family: 'Courier New', Courier, monospace;
+ 
   background-size: cover;
   background-position: center;
   min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff; /* Set text color to white for better visibility */
+  color: #000000; /* Set text color to white for better visibility */
   text-align: center;
-  background-color: #c0c0c0;
+
 
 }
 
 .hero-text p {
-  font-size: 32px;
+  font-size: 100px;
+ 
 
   opacity: 0;
   transform: translateY(20px);
@@ -79,7 +81,7 @@ nav ul li a {
 }
 
 .hero-text p:nth-child(2) {
-  animation-delay: 1s; /* Delay the animation of the second paragraph */
+  animation-delay: 3s; /* Delay the animation of the second paragraph */
 }
 
 /* Styling for the newsletter section */
@@ -156,7 +158,5 @@ nav ul li a {
 /* Dropdown menu */
 .dropdown:hover .dropdown-content {
   display: block;
-  transition: display 0.2s ease-in-out;
+  transition: display 2 ease-in-out;
 }
-
-/* You can further customize these styles and adjust colors to match your overall design aesthetic. */

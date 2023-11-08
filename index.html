@@ -2,190 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="events.css">   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
-   
+    
 
-    <!-- 3d graphics and animation  -->
-   
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-   
-   integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-   
-        <link rel="stylesheet" type="text/css" href="styles.css">
-      <title>WestLAPhoto</title>
-      
-    </head>
-    <body>
-      
-      <div class="HPcontainer">
+    <title>WestLAPhoto</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header section -->
         <div class="Header">
-          <div  class="HeaderLogoOne">
-            <img src="public/logos/grey_logo.png" alt="ImageLogo" style="width:40%">
-          </div>
-          <div id="TextLogo" class="TextLogo">
-            <img src="public/logos/transparent-text.png" alt="TextLogo" style="width:100%">
-          </div>
-          <div  class="HeaderLogoTwo">
-            <img src="public/logos/grey_logo.png" alt="ImageLogo" style="width:40%">
-          </div>
+            <div class="HeaderLogoOne">
+                <img src="public/logos/grey_logo.png" alt="ImageLogo" style="width: 30%">
+            </div>
+            <div id="TextLogo" class="TextLogo">
+                <img src="public/logos/transparent-text.png" alt="TextLogo" style="width: 40%">
+            </div>
+            <div class="HeaderLogoTwo">
+                <img src="public/logos/grey_logo.png" alt="ImageLogo" style="width: 30%">
+            </div>
         </div>
         
-        
+        <!-- Navigation menu -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav mx-auto"> <!-- Use mx-auto class to center-align -->
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Services 
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="portraits.html">Portraits</a></li>
-                    <li><a class="dropdown-item" href="events.html">Events</a></li>
-                    <li><a class="dropdown-item" href="products.html">Products</a></li>
-                    <li><a class="dropdown-item" href="weddings.html">Weddings</a></li>
-                  </ul>
-                </li>
-              </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="portraits.html">Portraits</a></li>
+                                <li><a class="dropdown-item" href="events.html">Events</a></li>
+                                <li><a class="dropdown-item" href="products.html">Products</a></li>
+                                <li><a class="dropdown-item" href="weddings.html">Weddings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </nav>
         
-        
-        
-        
- 
-        
-        
-       
-        
-        
-        
-        <div class="row">
-          
-          <!-- column one  -->
-          <div class="column">
-       <a href="public/images/portraits/11.jpg" >
-        <img src="public/images/portraits/11.jpg" alt="Photo 1">
-      </a>
-      <!-- 2 -->
-      <a href="public/images/portraits/editing_jpg _0215.jpg" >
-        <img src="public/images/portraits/editing_jpg _0215.jpg" alt="Photo 1">
-      </a>
-      <!-- 3 -->
-       <a href="public/images/portraits/tc2copy.jpg" >
-        <img src="public/images/portraits/tc2copy.jpg" alt="Photo 1">
-      </a>
-      <!-- 4 -->
-       <a href="public/images/portraits/editing_jpg _0214.jpg" >
-        <img src="public/images/portraits/editing_jpg _0214.jpg" alt="Photo 1">
-      </a>
-      <!-- 5 -->
-       <a href="public/images//portraits/male_headshot.jpg" >
-        <img src="public/images//portraits/male_headshot.jpg"alt="Photo 1">
-      </a>
-      <!-- 6 -->
-       <a href="public/images/portraits/editing_Capture_0034.jpg" >
-        <img src="public/images/portraits/editing_Capture_0034.jpg" alt="Photo 1">
-      </a>
-      <!-- 7 -->
-       <a href="public/images/portraits/IMG_0937.JPG" >
-        <img src="public/images/portraits/IMG_0937.JPG" alt="Photo 1">
-      </a>
-       <a href="public/images/portraits/editing_Capture_0037.jpg" >
-        <img src="public/images/portraits/editing_Capture_0037.jpg" alt="Photo 1">
-      </a>
-  
-  </div>
-          
-          
-         <!-- column two  -->
-          
-         <div class="column">
-      
-       <a href="public/images/portraits/editing_editing_0016.jpg" >
-        <img src="public//images/portraits/editing_editing_0016.jpg"alt="Photo 2">
-      </a>
-      <!-- 2 -->
-      <a href="public/images/portraits/portraits_0002.jpg" >
-        <img src="public/images/portraits/portraits_0002.jpg" alt="Photo 1">
-      </a>
-      <!-- 3 -->
-       <a href="public/images/portraits/tc5.jpg" >
-        <img src="public/images/portraits/tc5.jpg" alt="Photo 1">
-      </a>
-      <!-- 4 -->
-       <a href="public/images/portraits/oscar0117.jpg" >
-        <img src="public/images/portraits/oscar0117.jpg" alt="Photo 1">
-      </a>
-      <!-- 5 -->
-       <a href="public/images/portraits/portraits_0001.jpg" >
-        <img src="public/images/portraits/portraits_0001.jpg" alt="Photo 1">
-      </a>
-      <!-- 6 -->
-       <a href="public/images/portraits/IMG_0916.JPG" >
-        <img src="public/images/portraits/IMG_0916.JPG" alt="Photo 1">
-      </a>
-      <!-- 7s -->
-       <a href="public/images/portraits/editing_jpg _0214.jpg" >
-        <img src="public/images/portraits/editing_jpg _0214.jpg" alt="Photo 1">
-      </a>
-  
-  </div>
-          
-          <!-- column three  -->
-  <div class="column">
-    <!-- 1 -->
-      <a href="public/images/portraits/editing_editing_0026.jpg" >
-        <img src="public/images/portraits/editing_editing_0026.jpg" alt="Photo 1">
-      </a>
+        <!-- Image grid -->
+        <div class="container">
+        <!-- Image Slider -->
+        <div class="image-slider">
+            <img src="public/images/portraits/11.jpg" alt="Image 1">
+            <img src="public/images/portraits/2.jpg" alt="Image 2">
+            <img src="public/images/portraits/8.jpg" alt="Image 3">
+            <!-- Add more images as needed -->
+        </div>
+
+        <!-- Navigation buttons -->
+     <button id="prev-btn" class="button"><i class="fas fa-chevron-left"></i></button>
+     <button id="next-btn" class="button"><i class="fas fa-chevron-right"></i></button>
+
+
+    </div>
     
-      <!-- 2 -->
-      <a href="public/images/portraits/editing_editing_0027.jpg" >
-        <img src="public/images/portraits/editing_editing_0027.jpg" alt="Photo 1">
-      </a>
-      <!-- 3 -->
-       <a href="public/images/portraits/2.jpg" >
-        <img src="public/images/portraits/2.jpg" alt="Photo 1">
-      </a>
-      <!-- 4 -->
-       <a href="public/images/portraits/IMG_0734.JPG" >
-        <img src="public/images/portraits/IMG_0734.JPG" alt="Photo 1">
-      </a>    
-      <!-- 5 -->
-       <a href="public/images/portraits/editing_Maine_135mm_c41_0049.jpg" >
-        <img src="public/images/portraits/editing_Maine_135mm_c41_0049.jpg" alt="Photo 1">
-      </a>
-      <!-- 6 -->
-       <a href="public/images/portraits/EmptyName 111.jpg" >
-        <img src="public/images/portraits/EmptyName 111.jpg" alt="Photo 1">
-      </a>
-      <!-- 7 -->
-       <a href="public/images/weddings/weddings_0034.jpg" >
-        <img src="public/images/weddings/weddings_0034.jpg" alt="Photo 1">
-      </a>
+    <!-- JavaScript files -->
+
+    <script src="index.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
+
   
-  </div>
-        
-        
-        
-        <script src="index.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-      </body>
-      </html>
-      
+</body>
+</html>
