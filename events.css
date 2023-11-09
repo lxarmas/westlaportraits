@@ -3,6 +3,8 @@ body {
 }
 h2 {
   color: rgb(136, 136, 136) !important;
+ 
+
   font-family: 'Exo', sans-serif;
   text-align: left;
   padding: 10px 40px; /* Add padding to create space on both sides */
@@ -87,13 +89,13 @@ div.scrollmenu a:hover {
   }
 
   .column {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 100%; /* Full width for columns on smaller screens */
   }
    h2 {
     font-size: 18px;
-    padding: 10px; /* Adjust padding for smaller screens */
+    
   }
 }
 
@@ -110,8 +112,7 @@ div.scrollmenu a:hover {
 
 /* Create two equal columns that sits next to each other */
 .column {
-  margin-left: 40px;
-  margin-right: 40px;
+
   flex: 1;
   padding: 0 4px;
   display: flex;
