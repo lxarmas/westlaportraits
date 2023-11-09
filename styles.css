@@ -59,11 +59,8 @@ height:100.1%;
 
 .button {
     background-color: transparent;
-    color: #000000;
-    border: 2px solid #ffffff;
-    padding: 10px;
+  
     cursor: pointer;
-    border-radius: 5px;
     font-size: 25px;
     transition: background-color 0.3s;
 }
@@ -78,6 +75,8 @@ height:100.1%;
     font-size: inherit;
     vertical-align: middle;
     display: inline-block;
+    border:none;
+    outline:none;
 }
 
 /* Position the buttons */
@@ -85,12 +84,16 @@ height:100.1%;
     position: absolute;
     left: 50px; /* Adjust the left position as needed */
     bottom: 0px;
+    border:none;
+    outline:none
 }
 
 #next-btn {
     position: absolute;
     right: 50px; /* Adjust the right position as needed */
      bottom: 0px;
+     border:none;
+     outline:none;
 }
 
 
