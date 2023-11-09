@@ -2,22 +2,16 @@ body {
   overflow-x: hidden;
 }
 h2 {
-  color:rgb(136, 136, 136) !important;
+  color: rgb(136, 136, 136) !important;
   font-family: 'Exo', sans-serif;
   text-align: left;
-  padding: 10px 0;
+  padding: 10px 40px; /* Add padding to create space on both sides */
   letter-spacing: 3px;
   font-size: 62px !important; /* Add !important to override Bootstrap styles */
   background-color: rgb(225, 222, 222);
-  margin-left: 95px;
 }
-@media (min-width: 601px) and (max-width: 768px) {
- 
-  h2 {
-    font-size: 18px;
-    margin-left: 0; /* Adjust the margin to align with the columns on larger screens */
-  }
-}
+
+
 
 .Header {
   display: flex;
@@ -96,6 +90,10 @@ div.scrollmenu a:hover {
     margin-left: 0;
     margin-right: 0;
     width: 100%; /* Full width for columns on smaller screens */
+  }
+   h2 {
+    font-size: 18px;
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 }
 
