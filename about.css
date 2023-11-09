@@ -6,6 +6,30 @@ body {
 }
 
 
+
+.container {
+    text-align: center;
+    height: 100vh; /* Set the container height to the viewport height */
+    
+}
+.Header {
+
+  display: flex;
+  align-items: center; /* Centers items vertically within the container */
+  justify-content: space-between; /* Distributes items evenly along the container */
+}
+
+.HeaderLogoOne,
+.HeaderLogoTwo,
+.TextLogo {
+  
+  flex: 1; /* Each item will take an equal share of available space */
+  text-align: center; /* Centers the image horizontally within each div */
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+
 nav ul {
   list-style: none;
   margin: 0;

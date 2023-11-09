@@ -8,7 +8,7 @@ h2 {
   text-align: left;
   padding: 10px 0;
   letter-spacing: 3px;
-  font-size: 190px !important; /* Add !important to override Bootstrap styles */
+  font-size: 125px !important; /* Add !important to override Bootstrap styles */
   background-color: rgb(225, 222, 222);
 }
 @media only screen and (max-width: 600px) {
