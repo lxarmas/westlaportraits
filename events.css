@@ -1,0 +1,129 @@
+body {
+  overflow-x: hidden;
+}
+h2 {
+  color: rgb(136, 136, 136) !important;
+ 
+
+  font-family: 'Exo', sans-serif;
+  text-align: left;
+  padding: 10px 40px; /* Add padding to create space on both sides */
+  letter-spacing: 3px;
+  font-size: 62px !important; /* Add !important to override Bootstrap styles */
+  background-color: rgb(225, 222, 222);
+}
+
+
+
+.Header {
+  display: flex;
+  align-items: center; /* Centers items vertically within the container */
+  justify-content: space-between; /* Distributes items evenly along the container */
+}
+
+.HeaderLogoOne,
+.HeaderLogoTwo,
+.TextLogo {
+  flex: 1; /* Each item will take an equal share of available space */
+  text-align: center; /* Centers the image horizontally within each div */
+  margin-bottom: 25px;
+}
+
+
+
+/* NAVBAR */
+div.scrollmenu {
+  margin-top: 20px;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex; /* Use flexbox to manage layout */
+  justify-content: center; /* Center the links horizontally */
+}
+
+.navbar-link {
+  padding: 16px 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+
+  margin: 0 100px; /* Adjust as needed */
+}
+
+.navbar-link:hover {
+  background-color: #848484;;
+}
+
+div.scrollmenu a {
+  margin-left: 200px;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+
+  font-size: 25px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color:  #e4e4e4;
+
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*  GRID PICTURE */
+
+/* For screens up to 768px (typical phone size) */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .column {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%; /* Full width for columns on smaller screens */
+  }
+   h2 {
+    font-size: 18px;
+    
+  }
+}
+
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center; 
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+
+  flex: 1;
+  padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.column img {
+  width: 100%;
+  max-width: 100%; /* Ensure the image does not exceed the column's width */
+  margin-top: 8px;
+  align-self: center; /* Center the image within the column vertically */
+}
+

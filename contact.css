@@ -1,0 +1,54 @@
+body {
+  overflow-x: hidden;
+}
+
+
+
+h2 {
+
+  font-size: 45px;
+  margin: auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #000000; /* Set text color to white for contrast */
+  text-align: center; /* Center-align the text */
+  padding: 20px; /* Add padding for spacing around the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+}
+
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        input[type="submit"] {
+            background-color:  #ff0000;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #870000;
+        }
+        .dropdown:hover .dropdown-content {
+  display: block;
+  /* Add transition for smoother appearance */
+  transition: display 0.2s ease-in-out;
+}

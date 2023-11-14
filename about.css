@@ -1,0 +1,184 @@
+/* Styling for header and navigation */
+
+body {
+  overflow-x: hidden;
+ 
+}
+
+
+
+.container {
+    text-align: center;
+    height: 100vh; /* Set the container height to the viewport height */
+    
+}
+.Header {
+
+  display: flex;
+  align-items: center; /* Centers items vertically within the container */
+  justify-content: space-between; /* Distributes items evenly along the container */
+}
+
+.HeaderLogoOne,
+.HeaderLogoTwo,
+.TextLogo {
+  
+  flex: 1; /* Each item will take an equal share of available space */
+  text-align: center; /* Centers the image horizontally within each div */
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+
+/* Styling for the story/content section */
+
+.story {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.story h2 {
+  margin: 40px;
+  color: #cd0000; /* Darken the heading color */
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.story p {
+  font-weight: bold;
+  margin: 40px;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the hero section */
+
+.hero {
+  font-family: 'Courier New', Courier, monospace;
+ 
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000; /* Set text color to white for better visibility */
+  text-align: center;
+
+
+}
+.hero-text p {
+  font-size: 4rem; /* Adjust the value as needed */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 7s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text p:nth-child(2) {
+  animation-delay: 3s; /* Delay the animation of the second paragraph */
+}
+
+/* Styling for the newsletter section */
+
+.newsletter {
+  background-color: #f9f9f9; /* Use a light background color */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+}
+
+#newsletter-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Styling for the image gallery */
+
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.image-gallery a {
+  display: block;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Dropdown menu */
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: display 2 ease-in-out;
+}
