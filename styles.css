@@ -1,7 +1,29 @@
-body {
-  overflow: hidden;
-} */
+ body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
 
+        .Header {
+            letter-spacing: 30px; /* Add some letter spacing for a modern touch */
+            color: #000000; /* Choose a text color that contrasts well with the background */
+            text-align: left;
+            margin-top: 14px;
+           
+        }
+
+        .TextLogo {
+            font-size: 55px;
+            font-weight:bolder;
+            color: rgb(255, 142, 251); 
+            letter-spacing: 30px; /* Add some letter spacing for a modern touch */
+            text-transform: uppercase; /* Convert text to uppercase */
+            text-align: left; /* Align text to the left */
+            margin-left:0; /* Add left margin for indentation */
+         
+        }
+
+     
  html {
 height:100.1%;
 } 
@@ -9,25 +31,10 @@ height:100.1%;
 
 .container {
     text-align: center;
-    height: 100vh; /* Set the container height to the viewport height */
-    overflow: hidden; /* Hide any content that overflows the container */
-}
-.Header {
-
-  display: flex;
-  align-items: center; /* Centers items vertically within the container */
-  justify-content: space-between; /* Distributes items evenly along the container */
+    height: 100vh; 
+    overflow: hidden; 
 }
 
-.HeaderLogoOne,
-.HeaderLogoTwo,
-.TextLogo {
-  
-  flex: 1; /* Each item will take an equal share of available space */
-  text-align: center; /* Centers the image horizontally within each div */
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
 
 .image-slider {
     display: flex;
