@@ -1,8 +1,31 @@
-body {
-  overflow-x: hidden;
-}
-h2 {
-  color: rgb(136, 136, 136) !important;
+ body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .Header {
+            letter-spacing: 30px; /* Add some letter spacing for a modern touch */
+            color: #000000; /* Choose a text color that contrasts well with the background */
+            text-align: left;
+            margin-top: 14px;
+           
+        }
+
+        .TextLogo {
+            font-size: 55px;
+            font-weight:bolder;
+            color: rgb(255, 142, 251); 
+            letter-spacing: 30px; /* Add some letter spacing for a modern touch */
+            text-transform: uppercase; /* Convert text to uppercase */
+            text-align: left; /* Align text to the left */
+            margin-left:0; /* Add left margin for indentation */
+         
+        }
+
+
+h3 {
+  color: rgb(0, 0, 0) !important;
  
 
   font-family: 'Exo', sans-serif;
@@ -10,24 +33,12 @@ h2 {
   padding: 10px 40px; /* Add padding to create space on both sides */
   letter-spacing: 3px;
   font-size: 62px !important; /* Add !important to override Bootstrap styles */
-  background-color: rgb(225, 222, 222);
+ 
 }
 
 
 
-.Header {
-  display: flex;
-  align-items: center; /* Centers items vertically within the container */
-  justify-content: space-between; /* Distributes items evenly along the container */
-}
 
-.HeaderLogoOne,
-.HeaderLogoTwo,
-.TextLogo {
-  flex: 1; /* Each item will take an equal share of available space */
-  text-align: center; /* Centers the image horizontally within each div */
-  margin-bottom: 25px;
-}
 
 
 
