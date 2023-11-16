@@ -1,14 +1,15 @@
  body {
             margin: 0;
             padding: 0;
+          }
+          
+          .Header {
             font-family: 'Arial', sans-serif;
-        }
-
-        .Header {
             letter-spacing: 30px; /* Add some letter spacing for a modern touch */
             color: #000000; /* Choose a text color that contrasts well with the background */
             text-align: left;
             margin-top: 14px;
+            margin-left: 35px;
            
         }
 
@@ -184,3 +185,52 @@ nav ul li:first-child {
   display: block;
   transition: display 2 ease-in-out;
 }
+
+
+nav {
+     
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #000000;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff439e;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #555;
+    }

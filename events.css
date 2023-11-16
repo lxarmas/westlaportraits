@@ -1,14 +1,15 @@
  body {
             margin: 0;
             padding: 0;
+          }
+          
+          .Header {
             font-family: 'Arial', sans-serif;
-        }
-
-        .Header {
             letter-spacing: 30px; /* Add some letter spacing for a modern touch */
             color: #000000; /* Choose a text color that contrasts well with the background */
             text-align: left;
             margin-top: 14px;
+            margin-left: 35px;
            
         }
 
@@ -24,17 +25,6 @@
         }
 
 
-h3 {
-  color: rgb(0, 0, 0) !important;
- 
-
-  font-family: 'Exo', sans-serif;
-  text-align: left;
-  padding: 10px 40px; /* Add padding to create space on both sides */
-  letter-spacing: 3px;
-  font-size: 62px !important; /* Add !important to override Bootstrap styles */
- 
-}
 
 
 
@@ -43,45 +33,55 @@ h3 {
 
 
 /* NAVBAR */
-div.scrollmenu {
-  margin-top: 20px;
-  overflow: auto;
-  white-space: nowrap;
-  display: flex; /* Use flexbox to manage layout */
-  justify-content: center; /* Center the links horizontally */
-}
 
-.navbar-link {
-  padding: 16px 16px;
-  text-decoration: none;
-  border: none;
-  border-radius: 25px;
-  color: rgb(0, 0, 0);
-  text-align: center;
 
-  margin: 0 100px; /* Adjust as needed */
-}
+    nav {
 
-.navbar-link:hover {
-  background-color: #848484;;
-}
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
 
-div.scrollmenu a {
-  margin-left: 200px;
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  text-align: center;
+    nav a {
+      color: #000000;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
 
-  font-size: 25px;
-  text-decoration: none;
-}
+    nav a:hover {
+    color: #ff439e;
+    }
 
-div.scrollmenu a:hover {
-  background-color:  #e4e4e4;
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
 
-  border-radius: 20px;
-}
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
 
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #555;
+    }
 
 
 
