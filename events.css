@@ -1,47 +1,33 @@
- body {
-            margin: 0;
-            padding: 0;
-          }
+  body {
+  margin: 0;
+  padding: 0;
+  }
           
-          .Header {
-            font-family: 'Arial', sans-serif;
-            letter-spacing: 30px; /* Add some letter spacing for a modern touch */
-            color: #000000; /* Choose a text color that contrasts well with the background */
-            text-align: left;
-            margin-top: 14px;
-            margin-left: 35px;
-           
-        }
-
-        .TextLogo {
-            font-size: 55px;
-            font-weight:bolder;
-            color: rgb(255, 142, 251); 
-            letter-spacing: 30px; /* Add some letter spacing for a modern touch */
-            text-transform: uppercase; /* Convert text to uppercase */
-            text-align: left; /* Align text to the left */
-            margin-left:0; /* Add left margin for indentation */
-         
-        }
-
-
-
-
-
-
-
-
-
-/* NAVBAR */
-
-
-    nav {
-
-      color: #fff;
-      padding: 10px 20px;
-      text-align: center;
+  .Header {
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 30px; /* Add some letter spacing for a modern touch */
+    color: #000000; /* Choose a text color that contrasts well with the background */
+    text-align: left;
+    margin-top: 14px;
+    margin-left: 35px;
     }
 
+    .TextLogo {
+      font-size: 55px;
+      font-weight:bolder;
+      color: rgb(255, 142, 251); 
+      letter-spacing: 30px; /* Add some letter spacing for a modern touch */
+      text-transform: uppercase; /* Convert text to uppercase */
+      text-align: left; /* Align text to the left */
+      margin-left:0; /* Add left margin for indentation */
+      }
+  
+
+    nav {
+     
+    text-align:justify;
+    margin-left: 21px;
+    }
     nav a {
       color: #000000;
       text-decoration: none;
@@ -84,12 +70,13 @@
     }
 
 
-
-
-
-
-
-
+    .Stitles{
+       font-family: 'Arial', sans-serif;
+       font-size: 65px;
+       color:rgb(0, 0, 0); 
+       margin-left: 600px;
+      
+    }
 
 /*  GRID PICTURE */
 
@@ -104,10 +91,7 @@
     margin-right: 10px;
     width: 100%; /* Full width for columns on smaller screens */
   }
-   h2 {
-    font-size: 18px;
-    
-  }
+  
 }
 
 
