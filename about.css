@@ -59,6 +59,7 @@
 /* Styling for the hero section */
 .hero {
   position: relative;
+  background-color: #e6e6e6;
   font-family: 'Arial', sans-serif,cursive;
   background-size: cover;
   background-position: center;
@@ -93,15 +94,21 @@
 /* Apply animation delay for each paragraph */
 #line1 { animation: fadeIn 1s ease-in-out 0s forwards; }
 #line2 { 
-  animation: fadeIn 1s ease-in-out 2s forwards;
-  color:rgb(211, 4, 4);
- }
+  animation: fadeIn 1s ease-in-out 3s forwards;
+}
 
 #line3 {
-  animation: fadeIn 1s ease-in-out 4s forwards;
-  font-size: 0.8em; /* Adjust the font size as needed */
-  text-indent: 20px; /* Adjust the indentation as needed */
+  color:rgb(211, 4, 4);
+  animation: fadeIn 1s ease-in-out 7s forwards;
+  
+}
+#line4 {
+  animation: fadeIn 1s ease-in-out 7s forwards;
   color:#555;
+  font-size: 0.8em; 
+  text-indent: 20px; 
+  font-family: cursive, sans-serif;
+
 }
 
 /* Keyframes for fade-in effect */
