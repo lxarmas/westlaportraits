@@ -1,11 +1,11 @@
   body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
   }
           
   .Header {
     font-family: 'Arial', sans-serif;
-    letter-spacing: 30px; /* Add some letter spacing for a modern touch */
+    letter-spacing: 30px; 
     color: #000000; /* Choose a text color that contrasts well with the background */
     text-align: left;
     margin-top: 14px;
@@ -24,9 +24,8 @@
   
 
     nav {
-     
-    text-align:justify;
-    margin-left: 21px;
+      text-align:justify;
+      margin-left: 21px;
     }
     nav a {
       color: #000000;
@@ -37,7 +36,7 @@
     }
 
     nav a:hover {
-    color: #ff439e;
+      color: #ff439e;
     }
 
     .dropdown {
@@ -71,10 +70,15 @@
 
 
     .Stitles{
+    
        font-family: 'Arial', sans-serif;
-       font-size: 65px;
-       color:rgb(0, 0, 0); 
-       margin-left: 600px;
+       font-size: 35px;
+       color: rgb(177, 177, 177); 
+       margin-left: 580px;
+       text-transform: uppercase;
+       letter-spacing: 30px;
+      
+       
       
     }
 

@@ -1,7 +1,6 @@
  body {
             margin: 0;
             padding: 0;
-           
             overflow: hidden;
         }
 
@@ -16,13 +15,15 @@
         }
 
         .TextLogo {
-            font-size: 25px;
-           
+            font-size: 20px;
+            
             color: rgb(255, 142, 251); 
+         ;
             letter-spacing: 30px; /* Add some letter spacing for a modern touch */
             text-transform: uppercase; /* Convert text to uppercase */
             text-align: left; /* Align text to the left */
             margin-left:0; /* Add left margin for indentation */
+            margin-right: 1600px;
          
         }
 

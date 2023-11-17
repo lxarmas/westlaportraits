@@ -33,20 +33,7 @@
 }
 
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
 
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li:first-child {
-  margin-left: 0;
-}
 
 
 /* Styling for the story/content section */
@@ -58,56 +45,80 @@ nav ul li:first-child {
 
 .story h2 {
   margin: 40px;
-  color: #cd0000; /* Darken the heading color */
+  color: #bababab6; /* Darken the heading color */
   font-size: 28px;
   margin-bottom: 15px;
 }
 
 .story p {
-  font-weight: bold;
   margin: 40px;
-  font-size: 42px;
+  color: #bababa; /* Darken the heading color */
   margin-bottom: 20px;
 }
 
 /* Styling for the hero section */
-
 .hero {
-  font-family: 'Courier New', Courier, monospace;
- 
+  position: relative;
+  font-family: 'Arial', sans-serif,cursive;
   background-size: cover;
   background-position: center;
   min-height: 400px;
   display: flex;
+  font-size: 25px;
   justify-content: center;
   align-items: center;
-  color: #000000; /* Set text color to white for better visibility */
+  color: black;
   text-align: center;
-
-
+ 
+  
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Place the pseudo-element behind the text */
+  opacity: 0; /* Initial opacity set to 0 */
+  animation: fadeInBackground 6s ease-in-out forwards; /* Adjust the duration as needed */
+}
+
 .hero-text p {
-  font-size: 4rem; /* Adjust the value as needed */
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 7s ease-in-out forwards;
+  opacity: 0; /* Initially hide all paragraphs */
+  transition: opacity 1s ease-in-out; /* Set transition for opacity */
 }
 
+/* Apply animation delay for each paragraph */
+#line1 { animation: fadeIn 1s ease-in-out 0s forwards; }
+#line2 { 
+  animation: fadeIn 1s ease-in-out 2s forwards;
+  color:rgb(211, 4, 4);
+ }
 
+#line3 {
+  animation: fadeIn 1s ease-in-out 4s forwards;
+  font-size: 0.8em; /* Adjust the font size as needed */
+  text-indent: 20px; /* Adjust the indentation as needed */
+  color:#555;
+}
+
+/* Keyframes for fade-in effect */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
-.hero-text p:nth-child(2) {
-  animation-delay: 3s; /* Delay the animation of the second paragraph */
+/* Keyframes for fading background */
+@keyframes fadeInBackground {
+  to {
+    opacity: 1;
+  }
 }
+
+
 
 /* Styling for the newsletter section */
 
@@ -188,10 +199,8 @@ nav ul li:first-child {
 
 
 nav {
-     
-      color: #fff;
-      padding: 10px 20px;
-      text-align: center;
+    text-align:justify;
+    margin-left: 21px;
     }
 
     nav a {
