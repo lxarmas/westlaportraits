@@ -1,8 +1,15 @@
- body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
+
+
+@media (max-width: 768px) {
+  /* Custom styles for small screens */
+  body {
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+          }
+}
+
+
 
         .Header {
            font-family: 'Arial', sans-serif;
@@ -15,10 +22,9 @@
         }
 
         .TextLogo {
-            font-size: 20px;
+            
             
             color: rgb(255, 142, 251); 
-         ;
             letter-spacing: 30px; /* Add some letter spacing for a modern touch */
             text-transform: uppercase; /* Convert text to uppercase */
             text-align: left; /* Align text to the left */
@@ -158,7 +164,3 @@ nav {
       background-color: #e9e9e9;
     }
 
-
-@media (max-width: 768px) {
-  /* Custom styles for small screens */
-}

@@ -92,13 +92,16 @@
 }
 
 /* Apply animation delay for each paragraph */
-#line1 { animation: fadeIn 1s ease-in-out 0s forwards; }
+#line1 { 
+  color:#7a7a7a;
+  animation: fadeIn 1s ease-in-out 0s forwards; }
 #line2 { 
+  color:#7a7a7a;
   animation: fadeIn 1s ease-in-out 3s forwards;
 }
 
 #line3 {
-  color:rgb(211, 4, 4);
+  color:rgb(173, 3, 3);
   animation: fadeIn 1s ease-in-out 7s forwards;
   
 }
