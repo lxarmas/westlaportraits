@@ -1,0 +1,108 @@
+/* Ensure the whole page takes full width */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.App {
+  font-family: 'Arial', sans-serif;
+}
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #000000;
+  color: white;
+}
+
+body.dark .App {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+
+/* Button Styles */
+button {
+  font-family: 'Arial', sans-serif;
+ 
+}
+
+button:hover {
+  background-color: #eeac1c;
+}
+
+/* Other dark mode specific styles */
+body.dark button {
+  background-color: #eeac1c;
+  color: white;
+}
+
+/* Remove borders or margins between sections */
+section {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Make sure Chicago and Footer have distinct background colors */
+footer, .Chicago {
+  background-color: inherit; /* Ensure consistent background */
+}
+
+/* Scroll to Top Button */
+.scroll-to-top{
+    background-color:#f8aa02;
+    width: 140px; height: 80px; border-radius: 40px;
+    margin-left: 1600px;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    gap: 8px; /* Space between arrow and text */
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+ 
+  margin: 20px 0;
+  font-weight: 400;
+}
+.showcase-image {
+ 
+  width: 100rem;
+  height: 35rem;
+  object-fit: cover; /* Crop width but keep full height */
+  object-position: right right; /* Moves focus to the right */
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: white; /* Helps hide unwanted parts */
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) { /* Tablets & smaller screens */
+  .showcase-image {
+    height: 10rem;
+    object-position: right center; /* Keeps focus on the right */
+  }
+}
+
+@media (max-width: 480px) { /* Phones */
+  .showcase-image {
+    height: 16em;
+    width: 18rem;
+    object-position:  center; /* Forces cropping of the left side */
+  }
+}
