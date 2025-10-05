@@ -37,7 +37,7 @@ function Main( { isDarkMode } ) {
 
         <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} />} />
         <Route path="/confirmed" element={<ConfirmedBooking />} />
-        <Route path="/menu" element={<Portfolio />} />
+        <Route path="/projects" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>

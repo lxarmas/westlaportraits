@@ -14,8 +14,7 @@ function PersonalStory() {
                         Alejandro Armas is a professional commercial photographer with over
                         fifteen years of experience. After the COVID pandemic, he had a
                         revelation that coding would be the next chapter of his life. Since
-                        then, he has developed unique application systems that seamlessly
-                        blend technology, art, and commerce.
+                        then, he has developed unique ideas and worlds that shows the intricacy of a complex world
                     </p>
                 </div>
 

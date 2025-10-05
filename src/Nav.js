@@ -28,7 +28,7 @@ function Nav( { isDarkMode } ) {
             <Link to="/" onClick={() => setIsMenuOpen( false )}>Home</Link>
           </li>
           <li>
-            <Link to="/menu" onClick={() => setIsMenuOpen( false )}>Projects</Link>
+            <Link to="/projects" onClick={() => setIsMenuOpen( false )}>Projects</Link>
           </li>
           <li>
             <Link to="/about" onClick={() => setIsMenuOpen( false )}>About</Link>

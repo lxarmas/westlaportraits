@@ -1,30 +1,30 @@
 import React from "react";
-import worthyreads from "./images/worthyreads_image.png";
+import worthyreads from "./images/lifestyle/editing_editing_0009.jpg";
 import ninjagame from "./images/ninjagame.png";
-import sportsSupply from "./images/sportsSupply.png";
+import sportsSupply from "./images/portraits/editing_Capture_0033.jpg";
 
 function Portfolio() {
   const projects = [
     {
-      title: "WorthyReads",
+      title: "The art of black and white",
       image: worthyreads,
-      description: "Created a full-stack book club app within secure JWT auhtentication and Google API integration",
+      description: "Looking to find the inner beauty in monochrome tones",
       links: {
         demo: "",
         code: "https://github.com/lxarmas/worthy_reads",
       },
     },
     {
-      title: "Ninja Odyssey",
+      title: "The beauty in destruction",
       image: ninjagame,
-      description: "Completed  two player game with custom collision detection, reducing rendering lag by 15%.",
+      description: "book bases in chernobyl after effect",
       links: {
         demo: "https://lxarmas.github.io/Ninja_Odyssey/",
         code: "https://github.com/lxarmas/Ninja_Odyssey",
       },
     },
     {
-      title: "Fitness Rack",
+      title: "third Project",
       image: sportsSupply,
       description: "Developed an e-commerce site with optimized state management, boosting conversion rate by 40%",
       links: {
@@ -36,9 +36,9 @@ function Portfolio() {
 
   return (
     <section className="py-8 px-4 ">
-      <h2 className="text-5xl font-extrabold bg-gradient-to-r from-sky-800 to-cyan-600 bg-clip-text text-transparent mb-4 text-center">
-        Projects
-      </h2>
+      <h2 className="text-6xl font-serif text-gray-400 tracking-tight mb-10 text-center">
+  <span className="border-b-2 border-gray-500 pb-2">Projects</span>
+</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map( ( project, index ) => (
           <div

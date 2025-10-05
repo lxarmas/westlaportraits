@@ -19,7 +19,7 @@ function HomePage( { isDarkMode } ) {
       <div className="homepage-container">
         <Header />
         <PortfolioShowcase />
-        {/* <CustomerSays /> */}
+        <CustomerSays />
         {/* <PersonalStory /> */}
       </div>
 

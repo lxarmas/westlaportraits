@@ -11,7 +11,7 @@ function ContactForm() {
     return (
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-lg space-y-4">
             <div>
-                <label htmlFor="name" className="text-2xl font-extrabold bg-gradient-to-r from-sky-800 to-cyan-600 bg-clip-text text-transparent mb-4 text-center">Name</label>
+                <label htmlFor="name" className="text-6xl font-serif text-gray-100 tracking-tight mb-10 text-center">Name</label>
                 <input
                     id="name"
                     type="text"
@@ -22,7 +22,7 @@ function ContactForm() {
             </div>
 
             <div>
-                <label htmlFor="email" className="text-2xl font-extrabold bg-gradient-to-r from-sky-800 to-cyan-600 bg-clip-text text-transparent mb-4 text-center">Email Address</label>
+                <label htmlFor="email" className="text-6xl font-serif text-gray-100 tracking-tight mb-10 text-center">Email Address</label>
                 <input
                     id="email"
                     type="email"
@@ -34,7 +34,7 @@ function ContactForm() {
             </div>
 
             <div>
-                <label htmlFor="message" className="text-2xl font-extrabold bg-gradient-to-r from-sky-800 to-cyan-600 bg-clip-text text-transparent mb-4 text-center">Message</label>
+                <label htmlFor="message" className="text-6xl font-serif text-gray-100 tracking-tight mb-10 text-center">Message</label>
                 <textarea
                     id="message"
                     name="message"

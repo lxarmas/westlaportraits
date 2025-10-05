@@ -12,7 +12,7 @@ const ConfirmedBooking = () => {
   return (
     <div className='confirm'>
       <h1><b>Booking Confirmed!</b></h1>
-      <p>Your table has been successfully reserved. We look forward to serving you!</p>
+      <p>Your request has been successfully sent. We look forward to talking to you soon!</p>
       <button onClick={Submit}>Back to Home</button>
     </div>
   );

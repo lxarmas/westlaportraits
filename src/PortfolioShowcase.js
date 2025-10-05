@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import coding from "./images/lifestyle/editing_editing_0009.jpg"
-import debug from "./images/debug.png";
-import frontEnd from "./images/frontEnd.png";
-import performance from "./images/performance.png";
+import debug from "./images/lifestyle/editing_lebanon_135mm_c41_lores_0046.jpg";
+import frontEnd from "./images/products/editing_products_0209.jpg";
+import performance from "./images/events/editing_patron_event_la_0155.jpg";
 
 function PortfolioShowcase() {
     const projects = [
         {
-            title: "Debugging Mastery",
+            title: "the Beauty of destruction",
             description:
                 "Finding and squashing bugs is my superpower! With an analytical approach and problem-solving mindset, I turn frustrating issues into smooth experiences.",
             img: debug,
@@ -20,13 +20,13 @@ function PortfolioShowcase() {
             img: coding,
         },
         {
-            title: "Front-end Development",
+            title: "The third Project",
             description:
                 "Transforming user experiences with clean, responsive, and visually stunning interfaces. I build fast and interactive web apps using modern libraries and frameworks.",
             img: frontEnd,
         },
         {
-            title: "Database Management",
+            title: "The fourth project",
             description:
                 "Designing, optimizing, and managing databases for scalable and efficient data handling. I specialize in PostgreSQL and MySQL for robust back-end support.",
             img: performance,
@@ -41,9 +41,11 @@ function PortfolioShowcase() {
                 transition={{ duration: 0.8 }}
                 className="text-center"
             >
-                <h2 className="text-5xl font-extrabold bg-gradient-to-r from-sky-800 to-cyan-600 bg-clip-text text-transparent mb-2">
-                    FUN PROJECTS
-                </h2>
+ <h2 className="text-6xl font-serif text-gray-400 tracking-tight mb-10 text-center">
+  <span className="border-b-2 border-gray-500 pb-2">Projects</span>
+</h2>
+
+
                 <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
