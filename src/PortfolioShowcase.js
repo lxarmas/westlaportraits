@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import coding from "./images/coding.png";
+import coding from "./images/lifestyle/editing_editing_0009.jpg"
 import debug from "./images/debug.png";
 import frontEnd from "./images/frontEnd.png";
 import performance from "./images/performance.png";
@@ -14,7 +14,7 @@ function PortfolioShowcase() {
             img: debug,
         },
         {
-            title: "Innovative Coding",
+            title: "The Art of black and white",
             description:
                 "Bringing ideas to life with clean, efficient, and innovative code. From web apps to full-stack solutions, I love turning challenges into functional, elegant solutions.",
             img: coding,
@@ -42,7 +42,7 @@ function PortfolioShowcase() {
                 className="text-center"
             >
                 <h2 className="text-5xl font-extrabold bg-gradient-to-r from-sky-800 to-cyan-600 bg-clip-text text-transparent mb-2">
-                    My Skills and Expertise
+                    FUN PROJECTS
                 </h2>
                 <motion.div
                     initial={{ scale: 0 }}

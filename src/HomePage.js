@@ -18,7 +18,7 @@ function HomePage( { isDarkMode } ) {
     <main className={isDarkMode ? "dark-mode" : ""}>
       <div className="homepage-container">
         <Header />
-        {/* <PortfolioShowcase /> */}
+        <PortfolioShowcase />
         {/* <CustomerSays /> */}
         {/* <PersonalStory /> */}
       </div>

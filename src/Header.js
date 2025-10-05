@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
 
-// Helper to import all images from a folder
 function importAll(r) {
   return r.keys().map(r);
 }
 
-// Import from multiple folders
 const portraits = importAll(
   require.context("./images/portraits", false, /\.(jpg|jpeg|png)$/)
 );
@@ -19,33 +17,43 @@ const weddings = importAll(
   require.context("./images/weddings", false, /\.(jpg|jpeg|png)$/)
 );
 
-// Combine all images
 const images = [...portraits, ...lifestyle, ...weddings];
 
 function Header() {
   const navigate = useNavigate();
-  const Submit = () => navigate("/menu");
 
-  // Slider settings
+  const [orientations, setOrientations] = useState([]);
+
+  useEffect(() => {
+    const loadImages = async () => {
+      const orientationsArray = await Promise.all(
+        images.map(
+          (src) =>
+            new Promise((resolve) => {
+              const img = new Image();
+              img.onload = () => {
+                resolve(img.width >= img.height ? "landscape" : "portrait");
+              };
+              img.src = src;
+            })
+        )
+      );
+      setOrientations(orientationsArray);
+    };
+    loadImages();
+  }, []);
+
+  // Slider settings: no autoplay, no fade, show 1 image at a time
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,       // Number of images visible at once
+    speed: 600,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,          // Show arrows
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,  // For tablets
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 600,   // For phones
-        settings: { slidesToShow: 1 }
-      }
-    ]
+    arrows: true, // manually click next/prev
+    autoplay: false, // turn off auto-slide
+    fade: false, // no fade transition
+    pauseOnHover: true,
   };
 
   return (
@@ -53,7 +61,16 @@ function Header() {
       <Slider {...settings} className="photo-carousel">
         {images.map((src, index) => (
           <div className="photo-slide" key={index}>
-            <img src={src} alt={`Photo ${index + 1}`} loading="lazy" />
+            <img
+              src={src}
+              alt={`Photo ${index + 1}`}
+              loading="lazy"
+              className={
+                orientations[index] === "portrait"
+                  ? "portrait-photo"
+                  : "landscape-photo"
+              }
+            />
           </div>
         ))}
       </Slider>
