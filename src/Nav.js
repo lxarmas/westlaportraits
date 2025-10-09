@@ -1,7 +1,7 @@
 // Nav.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import alex_logo from './images/logo.png';
+
 import './Nav.css';
 
 function Nav( { isDarkMode } ) {
@@ -28,7 +28,7 @@ function Nav( { isDarkMode } ) {
             <Link to="/" onClick={() => setIsMenuOpen( false )}>Home</Link>
           </li>
           <li>
-            <Link to="/projects" onClick={() => setIsMenuOpen( false )}>Projects</Link>
+            <Link to="/projects" onClick={() => setIsMenuOpen( false )}>Portfolio</Link>
           </li>
           <li>
             <Link to="/about" onClick={() => setIsMenuOpen( false )}>About</Link>
