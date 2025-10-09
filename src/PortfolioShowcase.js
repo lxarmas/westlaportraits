@@ -8,27 +8,27 @@ import performance from "./images/events/editing_patron_event_la_0155.jpg";
 function PortfolioShowcase() {
     const projects = [
         {
-            title: "the Beauty of destruction",
+            title: "the Beauty of Lebanon",
             description:
-                "Finding and squashing bugs is my superpower! With an analytical approach and problem-solving mindset, I turn frustrating issues into smooth experiences.",
+                "35mm film images of Lebanon freeze in time",
             img: debug,
         },
         {
             title: "The Art of black and white",
             description:
-                "Bringing ideas to life with clean, efficient, and innovative code. From web apps to full-stack solutions, I love turning challenges into functional, elegant solutions.",
+                "Chasing the perfect momochromatcic tonality and gradiation",
             img: coding,
         },
         {
-            title: "The third Project",
+            title: "The every day object",
             description:
-                "Transforming user experiences with clean, responsive, and visually stunning interfaces. I build fast and interactive web apps using modern libraries and frameworks.",
+                "Tryingn to find personalties and characteristics through every day objects",
             img: frontEnd,
         },
         {
-            title: "The fourth project",
+            title: "Influencers Dilema",
             description:
-                "Designing, optimizing, and managing databases for scalable and efficient data handling. I specialize in PostgreSQL and MySQL for robust back-end support.",
+                "Following influencers in LA to see how their lives have been indfluenced by their work as full time creators",
             img: performance,
         },
     ];
@@ -60,7 +60,7 @@ function PortfolioShowcase() {
                 {projects.map( ( project, index ) => (
                     <motion.div
                         key={index}
-                        className="p-6 rounded-3xl shadow-xl bg-white/30 backdrop-blur-lg border border-cyan-300 text-center hover:scale-105 transition-transform duration-300"
+                        className="p-6 rounded-3xl shadow-xl bg-white/30 backdrop-blur-lg border border-black-300 text-center hover:scale-105 transition-transform duration-300"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -71,7 +71,7 @@ function PortfolioShowcase() {
                             alt={project.title}
                             className="mx-auto w-42 h-48 mb-4"
                         />
-                        <h3 className="text-2xl font-bold text-cyan-700">{project.title}</h3>
+                        <h3 className="border-b border-neutral-300 pb-2 mb-4 text-lg font-light text-gray-700">{project.title}</h3>
                         <p className="mt-3 text-gray-700">{project.description}</p>
                     </motion.div>
                 ) )}

@@ -20,7 +20,7 @@ function HomePage( { isDarkMode } ) {
         <Header />
         <PortfolioShowcase />
         <CustomerSays />
-        {/* <PersonalStory /> */}
+        <PersonalStory />
       </div>
 
       <button className="scroll-to-top" onClick={scrollToTop}>

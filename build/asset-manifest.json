@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.da2c85c2.css",
-    "main.js": "./static/js/main.019bfdb6.js",
-    "static/js/453.f0215fa0.chunk.js": "./static/js/453.f0215fa0.chunk.js",
+    "main.css": "./static/css/main.492ccd90.css",
+    "main.js": "./static/js/main.7956472f.js",
+    "static/js/453.6200ff1f.chunk.js": "./static/js/453.6200ff1f.chunk.js",
     "static/media/ale_headshot.png": "./static/media/ale_headshot.ed57f81ae6939b8fc785.png",
     "static/media/tc5.jpg": "./static/media/tc5.8c4ef3287bd84825ed7b.jpg",
     "static/media/oaxaca_mexico 326.jpg": "./static/media/oaxaca_mexico 326.7d47261306e0b396092f.jpg",
@@ -79,12 +79,12 @@
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "index.html": "./index.html",
-    "main.da2c85c2.css.map": "./static/css/main.da2c85c2.css.map",
-    "main.019bfdb6.js.map": "./static/js/main.019bfdb6.js.map",
-    "453.f0215fa0.chunk.js.map": "./static/js/453.f0215fa0.chunk.js.map"
+    "main.492ccd90.css.map": "./static/css/main.492ccd90.css.map",
+    "main.7956472f.js.map": "./static/js/main.7956472f.js.map",
+    "453.6200ff1f.chunk.js.map": "./static/js/453.6200ff1f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da2c85c2.css",
-    "static/js/main.019bfdb6.js"
+    "static/css/main.492ccd90.css",
+    "static/js/main.7956472f.js"
   ]
 }

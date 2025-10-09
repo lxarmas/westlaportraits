@@ -6,15 +6,17 @@ function PersonalStory() {
         <section className="py-12 px-6 bg-white dark:bg-black border-none">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
                 <div className="text-center md:text-left max-w-xl">
+                    
 
-                    <h2 className="text-5xl font-extrabold bg-gradient-to-r from-sky-800 to-cyan-600 bg-clip-text text-transparent mb-2">
-                        Why I am here?
-                    </h2>
+                  <h2 className="text-4xl font-light tracking-wide text-gray-800 border-b border-gray-400 pb-3 mb-8">
+  Who is the Photographer behind West LA Portraits
+</h2>
+
                     <p className="dark:text-white">
                         Alejandro Armas is a professional commercial photographer with over
                         fifteen years of experience. After the COVID pandemic, he had a
-                        revelation that coding would be the next chapter of his life. Since
-                        then, he has developed unique ideas and worlds that shows the intricacy of a complex world
+                        revelation Photography is a medium that can heal and make our lives a little 
+                        better and reflect what are we doing as indivuals.
                     </p>
                 </div>
 
