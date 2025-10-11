@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function importAll(r) {
@@ -15,8 +15,33 @@ function Gallery() {
   const { category } = useParams();
   const images = galleries[category] || [];
 
+  const [orientations, setOrientations] = useState([]);
+
+  useEffect(() => {
+    const loadOrientations = async () => {
+      const orientationResults = await Promise.all(
+        images.map(
+          (src) =>
+            new Promise((resolve) => {
+              const img = new Image();
+              img.onload = () => {
+                resolve(img.width >= img.height ? "landscape" : "portrait");
+              };
+              img.src = src;
+            })
+        )
+      );
+      setOrientations(orientationResults);
+    };
+    loadOrientations();
+  }, [images]);
+
   if (images.length === 0) {
-    return <p className="text-center mt-10">No images found for <strong>{category}</strong>.</p>;
+    return (
+      <p className="text-center mt-10">
+        No images found for <strong>{category}</strong>.
+      </p>
+    );
   }
 
   return (
@@ -27,11 +52,18 @@ function Gallery() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {images.map((src, index) => (
-          <div key={index} className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-500">
+          <div
+            key={index}
+            className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
+          >
             <img
               src={src}
-              alt={`${category} ${index}`}
-              className="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
+              alt={`${category} ${index + 1}`}
+              className={
+                orientations[index] === "portrait"
+                  ? "portrait-photo w-full h-80 object-cover"
+                  : "landscape-photo w-full h-80 object-cover"
+              }
               loading="lazy"
             />
           </div>
